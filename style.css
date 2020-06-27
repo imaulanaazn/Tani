@@ -1,0 +1,152 @@
+:root{
+	--main-bg-color: rgb(0,128,128);
+	--button-color-green: rgb(23,162,184);
+	--font-color-green: rgb(0,199,199);
+	--button-color-blue: rgb(0,123,255);
+	--right-radius: 0 3px 3px 0;
+	--left-radius: 3px 0 0 3px;
+}
+h1{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.container{
+	width: 80%;
+	margin: auto;
+}
+body header{
+	height: 60px;
+	background-color: var(--main-bg-color);
+	color: white;
+	position: fixed;
+	width: 100%;
+}
+body header .container{
+	display: flex;
+	align-items: center;
+}
+body header .logo{
+	font-size: 20px;
+	margin: 0 20px 0 20px;
+	line-height: 60px;
+}
+body  nav ul{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	align-self: center;
+}
+body  nav ul li{
+	list-style: none;
+}
+body  nav ul li a{
+	text-decoration: none;
+	color: white;
+	opacity: .5;
+	margin: 0 8px;
+	font-size: 15px;
+	transition: .2s;
+}
+body  nav ul li a:hover{
+	cursor: pointer;
+	opacity: .8;
+}
+body  nav ul li:nth-child(6){
+	padding-right: 10px;
+	margin-right: 10px;
+	border-right: 4px dotted rgba(225,225,225,.5);
+}
+body .search{
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+body .search input{
+	margin: 0;
+	padding: 15px;
+	width: 220px;
+	height: 38px;
+	border: none;
+	border-radius: var(--left-radius);
+	box-sizing: border-box;
+	font-size: 16px;
+}
+body .search button{
+	width: 40px;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: var(--right-radius);
+	background-color: var(--button-color-green);
+	transition: .3s ease;
+}
+body .search button:hover{
+	background-color: rgba(0,130,150);
+	cursor: pointer;
+}
+
+/*showcase*/
+.showcase{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 265px;
+	background-color: darkgrey;
+	padding-top: 60px;
+	text-align: center;
+	color: white;
+}
+.showcase h1{
+	font-size: 38px;
+}
+.showcase p{
+	font-size: 20px;
+	margin: 18px 0 15px;
+}
+.showcase button{
+	width: 120px;
+	height: 40px;
+	border: none;
+	color: white;
+	background-color: rgb(0,160,50);
+	border-radius: 5px;
+	font-size: 16px;
+	transition: .3s ease;
+}
+.showcase button:hover{
+	background-color: rgb(0,120,30);
+	cursor: pointer;
+}
+
+/*article*/
+
+.article{
+	height: 500px;
+	background-color: rgb(250,250,250);
+}
+.article .flex{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.article .flex .box{
+	width: 30%;
+	box-sizing: border-box;
+	padding: 10px;
+	box-shadow: 0 8px 15px -1px rgba(0,0,0,.1);
+	height: 400px;
+	border-radius: 10px;
+	margin: 18px 0;
+	background-color: white;
+}
